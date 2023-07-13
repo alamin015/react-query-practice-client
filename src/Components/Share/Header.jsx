@@ -8,7 +8,6 @@ const Header = () => {
     <header className='py-4 flex items-center justify-center'>
         <div className="container mx-auto flex gap-3">
             <NavLink to="/" className={({isActive}) => isActive ? 'text-red-600':''}>Home</NavLink>
-            <NavLink to="/about" className={({isActive}) => isActive ? 'text-red-600':''}>About</NavLink>
             <NavLink to="/blog" className={({isActive}) => isActive ? 'text-red-600':''}>Blog</NavLink>
             <NavLink to="/all" className={({isActive}) => isActive ? 'text-red-600':''}>All users</NavLink>
             <h5>carts- {cart.length}</h5>
