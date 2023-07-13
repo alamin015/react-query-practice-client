@@ -62,15 +62,16 @@ const handleForm = (e) => {
       }
       <h2>All users</h2>
       <p className="mb-8">Total= {allUser.length}</p>
-<div className="flex justify-between gap-7">
-  <div className="flex-grow border-r-2 border-green-300 pr-4">
+<div className="sm:flex sm:justify-between gap-7">
+  <div className="sm:flex-grow w-full sm:min-w-[400px] sm:mb-0 mb-8 border-r-2 border-green-300 pr-4">
     <form onSubmit={handleForm}>
       <input className="py-2 px-1 w-full border rounded-md outline-none mb-3 block" type="text" name="name" />
       <input className="py-2 px-1 w-full border rounded-md outline-none mb-3 block" type="email" name="email" />
       <button className="py-2 px-7 border-0 outline-none bg-green-700 text-white font-medium">Add User</button>
     </form>
   </div>
-  <table className="border-collapse min-w-[700px] overflow-x-auto border border-slate-400">
+ <div className="w-full overflow-auto">
+ <table className="border-collapse min-w-[600px] border border-slate-400">
         <thead>
           <tr>
             <th className="border p-2 border-slate-300">SL. No.</th>
@@ -90,6 +91,7 @@ const handleForm = (e) => {
           }
         </tbody>
       </table>
+ </div>
 </div>
     </div>
   );
